@@ -6,7 +6,7 @@ dotenv.config();
 const app = express();
 const PORT = process.env.PORT || 2002;
 
-app.use(express.json()); //allows us to parse incomming request with JSON payloads
+app.use(express.json()); //allows us to parse incomming request with JSON payloads:req.bosy
 app.use("/api/auth", authRoutes);
 
 app.listen(PORT, () => {

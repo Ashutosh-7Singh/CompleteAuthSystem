@@ -1,6 +1,7 @@
-import mongoose from "mongoose";
+import mongoose, { mongo } from "mongoose";
 
-const userSchema = new mongoose(
+const { Schema } = mongoose;
+const userSchema = new Schema(
   {
     email: {
       type: String,
